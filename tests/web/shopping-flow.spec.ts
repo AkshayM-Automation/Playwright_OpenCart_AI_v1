@@ -14,7 +14,7 @@ function getRandomCustomer() {
     return { firstName, lastName, email, telephone, password };
 }
 
-test('End-to-End Shopping Flow @master @sanity @regression @web', async ({ homePage, registerPage, loginPage, myAccountPage, productPage, page }) => {
+test('End-to-End Shopping Flow @master @e2e @web', async ({ homePage, registerPage, loginPage, myAccountPage, productPage, page }) => {
     const customer = getRandomCustomer();
 
     await test.step('1) Open the application', async () => {
